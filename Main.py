@@ -16,9 +16,32 @@ def firstScene():
         if choice == "2":
             print("You take shelter underneath some trees to hide from the rain and wait for the storm to pass. Off in the distance you notice a massive tree that sort of looks like a house. You walk up and knock on the door")
 
+def inTheTreehouse():
+    print("\n")
+    print("The door opens and little creature greets you")
+    print("You ask if it would be okay for you to stay the night and the little creature nods in agreement")
+    print("You quickly fall asleep")
+    print("The next morning the forrest now looks alot friendlier in the soft glow of the sunrise")
+    print("Will you:")
+    print("1: Thank the creature for the night and venture out into the woods again")
+    print("2: Ask if it would be okay for you to stay another day")
+    choice = input("> ")
+    if choice == "1":
+        print("You head out and the sun shines brightly")
+    elif choice == "2":
+        print("The creature says you can stay aslong as you help him with some chores")
+        print("After a day of chopping wood and gathering berries and mushrooms, your very tired")
+        print("The creature thanks you for your hard work and gives you a gift to aid you in your journey")
+        print("Inside the package you find a bow and two arrows")
+        print("+ 1 Bow")
+        Inventory.update({"Bow":True})
+        print("+ 2 Arrows")
+        Inventory.update({"Arrows":Inventory["Arrows"] + 2})
+
 print("Adventure Game")
 print("--------------")
 print("To play, enter the number corresponding to your chosen path")
 print("-----------------------------------------------------------")
 
 firstScene()
+inTheTreehouse()
