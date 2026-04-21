@@ -1,5 +1,7 @@
+# Dictionary that stores the players inventory
 Inventory = {"Bandaid":0, "Bow":False, "Arrows":0, "Sword":False}
 
+# The first scene of the game
 def firstScene():
     print("You find yourself in a dark dark forrest, You see a mountain off in the distance.\n Do You:\n 1: Walk down the dark path to go deeper into the forrest?\n 2: Walk towards the mountains")
     choice = input("> ")
@@ -27,6 +29,7 @@ __/__/_______/___/__\___\__________________________________________________
             print("The cave was already home to a bear, the bear eats you")
         if choice == "2":
             print("You take shelter underneath some trees to hide from the rain and wait for the storm to pass. Off in the distance you notice a massive tree that sort of looks like a house. You walk up and knock on the door")
+# The second scene of the game
 def inTheTreehouse():
     print("""\
                           
@@ -71,10 +74,13 @@ def inTheTreehouse():
         print("The creature thanks you for your hard work and gives you a gift to aid you in your journey")
         print("Inside the package you find a bow and two arrows")
         print("+ 1 Bow")
+        # Update the Inventory Dict so that the player has a bow
         Inventory.update({"Bow":True})
         print("+ 2 Arrows")
+        # Update the inventory by fetching the amount of arrows the player already has and adding the additional arrows
         Inventory.update({"Arrows":Inventory["Arrows"] + 2})
 
+# Intro to the game                      
 print("Adventure Game")
 print("--------------")
 print("To play, enter the number corresponding to your chosen path")
