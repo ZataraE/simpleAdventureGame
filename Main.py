@@ -9,19 +9,56 @@ def firstScene():
         if choice == "1":
             print("You keep walking and fall into a hole and die")
     elif choice == "2":
+        print("""\
+          /\\
+         /**\\
+        /****\   /\\
+       /      \ /**\\
+      /  /\    /    \        /\    /\  /\      /\            /\/\/\  /\\
+     /  /  \  /      \      /  \/\/  \/  \  /\/  \/\  /\  /\/ / /  \/  \\
+    /  /    \/ /\     \    /    \ \  /    \/ /   /  \/  \/  \  /    \   \\
+   /  /      \/  \/\   \  /      \    /   /    \\
+__/__/_______/___/__\___\__________________________________________________
+
+              """)
         print("After some walking you reach the mountain when suddenly a thunderstorm breaks out. \n Do you:\n 1: Take shelter inside a nearby cave \n 2: Walk back into the forrest")
         choice = input("> ")
         if choice == "1":
             print("The cave was already home to a bear, the bear eats you")
         if choice == "2":
             print("You take shelter underneath some trees to hide from the rain and wait for the storm to pass. Off in the distance you notice a massive tree that sort of looks like a house. You walk up and knock on the door")
-
 def inTheTreehouse():
-    print("\n")
+    print("""\
+                          
+     .{{}}}}}}.
+    {{{{{{(`)}}}.
+   {{{(`)}}}}}}}}}
+  }}}}}}}}}{{(`){{{
+  }}}}{{{{(`)}}{{{{
+ {{{(`)}}}}}}}{}}}}}
+{{{{{{{{(`)}}}}}}}}}}
+{{{{{{{}{{{{(`)}}}}}}
+ {{{{{(`)   {{{{(`)}'
+  `""'" |   | "'"'`
+  (`)  /     \\
+ ~~~~~~~~~~~~~~~~~~~       
+                """)
     print("The door opens and little creature greets you")
     print("You ask if it would be okay for you to stay the night and the little creature nods in agreement")
     print("You quickly fall asleep")
     print("The next morning the forrest now looks alot friendlier in the soft glow of the sunrise")
+    print("""\
+           |
+     \     |     /
+       \       /
+         ,d8b,           .,
+ (')-")_ 88888 ---   ;';'  ';'.
+('-  (. ')98P'      ';.,;    ,;
+ '-.(PjP)'     \       '.';.'
+           |     \\
+           |
+
+          """)
     print("Will you:")
     print("1: Thank the creature for the night and venture out into the woods again")
     print("2: Ask if it would be okay for you to stay another day")
