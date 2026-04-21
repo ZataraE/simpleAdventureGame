@@ -77,7 +77,7 @@ def inTheTreehouse():
         # Update the Inventory Dict so that the player has a bow
         Inventory.update({"Bow":True})
         print("+ 2 Arrows")
-        # Update the inventory by fetching the amount of arrows the player already has and adding the aditional arrows
+        # Update the inventory by fetching the amount of arrows the player already has and adding the additional arrows
         Inventory.update({"Arrows":Inventory["Arrows"] + 2})
 
 # Intro to the game                      
