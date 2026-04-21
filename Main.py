@@ -1,3 +1,5 @@
+Inventory = {"Bandaid":0, "Bow":False, "Arrows":0, "Sword":False}
+
 def firstScene():
     print("You find yourself in a dark dark forrest, You see a mountain off in the distance.\n Do You:\n 1: Walk down the dark path to go deeper into the forrest?\n 2: Walk towards the mountains")
     choice = input("> ")
