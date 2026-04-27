@@ -10,6 +10,8 @@ def firstScene():
         choice = input("> ")
         if choice == "1":
             print("You keep walking and fall into a hole and die")
+        elif choice == "2":
+            inTheTreehouse()
     elif choice == "2":
         print("""\
           /\\
@@ -29,6 +31,7 @@ __/__/_______/___/__\___\__________________________________________________
             print("The cave was already home to a bear, the bear eats you")
         if choice == "2":
             print("You take shelter underneath some trees to hide from the rain and wait for the storm to pass. Off in the distance you notice a massive tree that sort of looks like a house. You walk up and knock on the door")
+            inTheTreehouse()
 # The second scene of the game
 def inTheTreehouse():
     print("""\
@@ -87,4 +90,3 @@ print("To play, enter the number corresponding to your chosen path")
 print("-----------------------------------------------------------")
 
 firstScene()
-inTheTreehouse()
